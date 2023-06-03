@@ -10,10 +10,30 @@ def animals():
     global window
     window = Tk()
     window.withdraw()
+    ask()
 
     # TODO 1. Ask the user which animal they want, then see and
     #  hear the animal they chose using one of the methods below.
+def ask():
+    animal = simpledialog.askstring(title="Animal Farm", prompt="Which animal do you want?")
+    choose_method(animal)
 
+def choose_method(animal):
+    if animal == "cow":
+        moo()
+    elif animal == "duck":
+        quack()
+    elif animal == "dog":
+        woof()
+    elif animal == "duck":
+        quack()
+    elif animal == "cat":
+        meow()
+    elif animal == "llama":
+        llama_scream()
+    elif animal == "exit":
+        exit()
+    ask()
     # TODO 2. Make it so that the user can keep entering new animals.
 
     # TODO 3. If the user enters 'exit', stop the program
