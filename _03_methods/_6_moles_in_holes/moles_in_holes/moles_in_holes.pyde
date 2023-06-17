@@ -15,7 +15,13 @@ def setup():
 def draw():
     # Write code here that uses the drawMole method to put a mole
     # in each of the holes
-
+    if mousePressed:
+        print(mouseX)
+        print(mouseY)
+    draw_mole(67, 108)
+    draw_mole(298, 47)
+    draw_mole(196, 185)
+    draw_mole(298, 339)
 
     pass
 

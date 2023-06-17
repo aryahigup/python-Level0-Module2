@@ -34,17 +34,17 @@ def draw():
     # 6. Use an if statement to play a sound (ding) when your dot crosses the finish
     # line (right side of window). A playSound() method is provided (you have to
     # uncomment the code at the bottom of this program to get this to work)
-    if x == 800:
+    if x >= 800:
         play_sound()
 
 sound_played = False
 def play_sound():
-    if can_play_sounds:
-        if !sound_played:
-            Sound s = new Sound("ding.wav")
-            sound.trigger()
-            soundPlayed = true
-            pass
-    fill(0)
+    #if can_play_sounds:
+        #if !sound_played:
+            #Sound s = new Sound("ding.wav")
+            #sound.trigger()
+            #sound_played = true
+            #pass
+    fill('#030000')
     textSize(36)
-    text("WINNER!!", width/2, height/2)
+    text("WINNER!!", 400, 100)
